@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin: 0px 180px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    margin-left: 12px;
+}
+h3 {
+    font-size: 32px;
+    padding: 50px 0px 30px;
+    text-align: center;
+}
+li {
+    line-height: 32px;
+    font-size: 18px;
+}
+li::before {
+    content: "__";
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/seta.png);
+    margin: 0 6px 0 0;
+}
+p {
+    font-size: 18px;
+    line-height: 32px;
+}
+.footer {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.secao-capa {
+    margin: 0px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    background-image: url(img/bg-estacao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.secao-capa h1{
+    font-size: 80px;
+}
+.secao-capa h2{
+    font-size: 35px;
+}
+.secao-capa div {   
+    text-align: center;
+    position: relative;
+    width: calc(100% - 80px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 60px 20px;
+}
+.secao-capa::before{
+    opacity: 0.5;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+}
+.secao-cidade p::first-letter, .secao-pontos p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+}
+.secao-galeria p {
+    font-size: 24px;
+}
+.img-grande {
+    width: 100%;
+}
+.img-pequenas {
+    width: calc((100% /3) - 3px);
+    opacity: .5;
+}
+.img-pequenas:hover{
+    opacity: 1;
+}
+.imgs-pequena{
+    padding: 10px 0px 180px 0px;
+}
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: yellow;
+    margin: 0;
+}
